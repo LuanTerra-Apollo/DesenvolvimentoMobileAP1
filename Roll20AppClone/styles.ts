@@ -60,7 +60,7 @@ export const styles = StyleSheet.create({
         fontWeight: 'bold'
     },
     bottomText: {
-        marginTop: 42,
+        marginTop: 36,
         textAlign: 'center',
         fontSize: 18,
         color: '#fff'
