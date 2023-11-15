@@ -6,21 +6,19 @@ export const styles = StyleSheet.create({
         flexDirection: "column"
     },
     viewTop: {
-        height: '50%'
+        height: 370
     },
     topImage: {
-        position: 'absolute',
         width: '100%',
-        height: '100%'
+        height: 400
     },
     topLogo: {
         position: 'absolute',
         width: '80%',
-        height: '20%',
-        marginTop: 20
+        height: '25%'
     },
     viewBottom: {
-        height: '50%',
+        height: 430,
         backgroundColor: '#141b25',
         paddingHorizontal: 32,
         paddingVertical: 16
