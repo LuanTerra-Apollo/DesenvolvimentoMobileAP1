@@ -4,7 +4,7 @@ export const styles = StyleSheet.create({
     viewContainer: {
         flex: 1,
         flexDirection: "column",
-        backgroundColor: '#14141c',
+        backgroundColor: '#14141c'
     },
     viewTop:{
         width: '100%',
