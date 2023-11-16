@@ -25,7 +25,7 @@ export const Home = ({ navigation }: Props ) => {
           <Text style={styles.bottomTitleText}>Roll20</Text>
           <Text style={styles.bottomSubtitleText}>Your friends. Your games. Your table. Anywhere.</Text>
           <Button title="Sign In" priority='primary' onPress={() => navigation.navigate('Login', {})}/>
-          <Text style={[styles.bottomText, {marginTop: 32, fontSize: 18}]}>New to Roll20?</Text>
+          <Text style={[styles.bottomText, {marginTop: 24, fontSize: 18}]}>New to Roll20?</Text>
           <Text style={[styles.bottomText, {marginTop: 0, fontSize: 18}]}><Text style={styles.bottomLink} onPress={() => { Linking.openURL('https://app.roll20.net/create-account')}}>Create an account</Text></Text>
           <Text style={styles.bottomText}>By continuing you agree to our</Text>
           <Text style={[styles.bottomText, {marginTop: 0}]}><Text style={styles.bottomLink} onPress={() => { Linking.openURL('https://help.roll20.net/hc/en-us/articles/360037770793-Terms-of-Service-and-Privacy-Policy')}}>Terms of Service and Privacy Policy.</Text></Text> 

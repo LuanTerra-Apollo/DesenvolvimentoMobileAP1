@@ -1,16 +1,16 @@
-import { View, Text, TouchableOpacity, Image, TextInput} from 'react-native'
+import { View, Text, Image, TextInput} from 'react-native'
 import { styles } from './styles'
-import { AntDesign, SimpleLineIcons, Fontisto, Entypo } from '@expo/vector-icons';
 import backgroundImage from '../../../BackgroundTelaLogin.jpeg'
 import { LinearGradient } from 'expo-linear-gradient'
 import { RootStackParamList } from '../../routes/StackNavigator';
 import React from 'react'
 import { NativeStackNavigationProp } from '@react-navigation/native-stack'
 import { Button } from '../../components/Buttons';
+import { NavBar } from '../../components/NavBar';
 
-type CloseScreenNavigationProp = NativeStackNavigationProp<RootStackParamList, 'Login'>
+type ScreenNavigationProp = NativeStackNavigationProp<RootStackParamList, 'Login'>
 
-type Props = {navigation: CloseScreenNavigationProp}
+type Props = {navigation: ScreenNavigationProp}
 
 export const Login = ({navigation}: Props) => {
     return (
@@ -19,17 +19,7 @@ export const Login = ({navigation}: Props) => {
                 colors={["#2f0f41", 'transparent', 'transparent']}
                 start={{ x: 0, y: 0 }}
                 end={{ x: 0, y: -1 }} style={styles.background}>
-                <View style={styles.viewHeader}>
-                    <View style={styles.headerLeft}>
-                        <AntDesign onPress={() => navigation.navigate('Home', {})} name="close" size={30} color="white" style={[{marginLeft: 8}]} />
-                        <SimpleLineIcons name="lock" size={16} color="white" style={[{marginLeft: 24}, {marginBottom: 2}]} />
-                        <Text style={styles.headerText}>accounts.roll20.net</Text>
-                    </View>
-                    <View style={styles.headerRight}>
-                        <Fontisto name="share" size={24} color="white" style={[{marginRight: 24}]} />
-                        <Entypo name="dots-three-vertical" size={24} color="white" style={[{marginRight: 8}]} />
-                    </View>
-                </View>
+                <NavBar rotas={[{name: 'Home', navegar: () => navigation.navigate('Home', {})}]} link='accounts.roll20.net' />
                 <View style={styles.viewTop}>
                     <Image source={backgroundImage} style={styles.topImage}/>
                 </View>

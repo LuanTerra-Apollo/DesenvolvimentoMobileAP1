@@ -3,27 +3,29 @@ import { StyleSheet } from "react-native";
 export const styles = StyleSheet.create({
     container: {
         flex: 1,
-        flexDirection: "column"
+        flexDirection: "column",
     },
     viewTop: {
-        height: 370
+        height: '50%',
+        position: 'relative'
     },
     topImage: {
         width: '100%',
-        height: 400
+        height: '100%'
     },
     topLogo: {
         position: 'absolute',
         width: '80%',
-        height: '25%'
+        height: '25%',
+        
     },
     viewBottom: {
-        height: 430,
+        height: '50%',
         backgroundColor: '#141b25',
         paddingHorizontal: 32,
-        paddingVertical: 16
     },
     bottomVersion: {
+        marginTop: 8,
         backgroundColor: '#0d8643',
         width: '60%',
         textAlign: 'center',
@@ -58,7 +60,7 @@ export const styles = StyleSheet.create({
         fontWeight: 'bold'
     },
     bottomText: {
-        marginTop: 24,
+        marginTop: 16,
         textAlign: 'center',
         fontSize: 14,
         color: '#fff'
